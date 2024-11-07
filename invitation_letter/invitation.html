@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dining Date 💕</title>
+    <link rel="icon" type="image/png" href="src\assets\front-stk.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+      <style>
+        body {
+          background-image: url("../images/background.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        .front{
+          background-image: url("src/assets/front-bg.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% ;
+          
+        }
+      </style>
+    <div class="card">
+     <div class="outside">
+         <div class="front">
+          <div class="hiee">
+            <p1>Invitation Letter</p1>
+          </div>
+          <div class="front-sticker">
+            <img src="../images/freisteller-chef.png" alt="Invitation Letter">
+          </div>
+        </div> 
+        <div class="back">
+          <div class="back-sticker">
+            <img src="src\assets\back.webp" alt="Phool !!">
+          </div>
+        </div>
+      </div>
+      <div class="inside">
+            <div class="hiee">
+                <p1>Dear Liya</p1>
+            </div>
+        <div class="main-sticker">
+          <div class="letter">
+            <p>
+              We have been chatting for almost two months, and I truly enjoy every moment of our conversations. I can't wait for the day we finally meet in person.
+              <br><br>
+              On December 6th, at 19:00, I would be very happy if you joined me for the dinner at Le Petit Chef.
+              <br><br>
+              Please say yes and make this evening perfect.
+              <br><br>
+              With all my warmth,<br>
+              Bayan
+            </p>
+        </div>
+        </div>
+        <div class = "buttons">
+          <button class="btn" id = "yesButton" onclick="nextPage('yes')">Yes</button>
+          <button class="btn" id="noButton" onclick="nextPage('no')">No</button> 
+          <script>
+            function nextPage(choice) {
+                if (choice === 'yes') {
+                    window.location.href = "src/yes.html";
+                } else if (choice === 'no') {
+                    alert('Please, think again 😭');
+                    document.getElementById('noButton').style.display = 'none';
+                }
+            }
+        </script>
+      </div>
+      </div>
+    </div> 
+    </body>
+</html>
