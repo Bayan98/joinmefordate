@@ -120,9 +120,8 @@ img {
 }
 
 .letter {
-  position: relative;
-  display: flex;
-  font-size: 1.2em;
+  /* position: relative; */
+  font-size: 1vw;
   color: #000000;
   font-family: 'Delius Swash Caps';
   text-align: center;
@@ -182,10 +181,12 @@ img {
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: -10%;
-  width: 60%;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .btn {
@@ -195,8 +196,8 @@ img {
   padding: 12px 30px;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: calc(1em + 0.5vw);
+  margin: 10px;
   cursor: pointer;
   border: none;
   border-radius: 12px;
