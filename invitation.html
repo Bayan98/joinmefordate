@@ -24,7 +24,7 @@
           
         }
       </style>
-    <div class="card">
+    <div class="card" onclick="rotateCard(this)">
      <div class="outside">
          <div class="front">
           <div class="hiee">
@@ -60,11 +60,11 @@
         </div>
         <div class = "buttons">
           <button class="btn" id = "yesButton" onclick="nextPage('yes')">Yes</button>
-          <button class="btn" id="noButton" onclick="nextPage('no')">No</button> 
+          <button class="btn" id = "noButton" onclick="nextPage('no')">No</button> 
           <script>
             function nextPage(choice) {
                 if (choice === 'yes') {
-                    window.location.href = "yes";
+                    window.location.href = "yes.html";
                 } else if (choice === 'no') {
                     alert('Please, think again 😭');
                     document.getElementById('noButton').style.display = 'none';
@@ -74,5 +74,10 @@
       </div>
       </div>
     </div> 
-    </body>
+    <script>
+  function rotateCard(card) {
+    card.classList.toggle('clicked');
+  }
+</script>
+$1
 </html>
